@@ -12,7 +12,7 @@ type Hope struct {
 }
 
 //В Java статическая функция, может выполняться без контекста (инстанса класса), в golang методы нельзя вызвать без экземпляра структуры.
-//Поэтому static метод execute можно заменить на функцию. 
+//Поэтому static метод execute можно заменить на функцию.
 
 func execute() {
 	fmt.Println("Hope executed")
@@ -33,11 +33,11 @@ func (d Dream) taste() float32 {
 }
 
 func main() {
+	fmt.Println("task1")
+
 	hope := Hope{}
 	dream := Dream{}
 
 	hope.taste()
 	dream.taste()
-	
-	fmt.Println("task2")
 }
