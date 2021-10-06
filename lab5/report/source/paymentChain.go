@@ -42,7 +42,7 @@ func (j CalcJob) Execute(p payment.Payment) error {
 type TransitJob struct{}
 
 func (j TransitJob) Execute(p payment.Payment) error {
-	fmt.Print("TransitJob ")
+	fmt.Print("TransitJob")
 	fmt.Printf("transfer %d value from %s to %s -> ", p.Value, p.VaultSrc, p.VaultDst)
 	return nil
 }
