@@ -1,0 +1,332 @@
+[
+  {
+    "name": "2f70628e-3660-443d-8e1e-582b1932ddd8",
+    "preciousness": false,
+    "origin": "Russian Federation",
+    "visual": {
+      "color": "Beige",
+      "opacity": 0,
+      "edges": 26
+    },
+    "value": 796
+  },
+  {
+    "name": "cc0e3c94-a6c6-4901-b237-94d596ded85b",
+    "preciousness": false,
+    "origin": "Guadeloupe",
+    "visual": {
+      "color": "IndianRed ",
+      "opacity": 0,
+      "edges": 40
+    },
+    "value": 710
+  },
+  {
+    "name": "5e38ec55-243c-46c2-bf34-ce5e73577e5f",
+    "preciousness": true,
+    "origin": "Nigeria",
+    "visual": {
+      "color": "OldLace",
+      "opacity": 0,
+      "edges": 4
+    },
+    "value": 163
+  },
+  {
+    "name": "b92f133a-a407-4846-9334-ff2d11896a0e",
+    "preciousness": true,
+    "origin": "Philippines",
+    "visual": {
+      "color": "Violet",
+      "opacity": 0,
+      "edges": 9
+    },
+    "value": 70
+  },
+  {
+    "name": "f8c724dc-aa3d-45ba-8405-7cbc504d2695",
+    "preciousness": false,
+    "origin": "Philippines",
+    "visual": {
+      "color": "SpringGreen",
+      "opacity": 0,
+      "edges": 3
+    },
+    "value": 437
+  },
+  {
+    "name": "bcd5dac4-b072-42ea-aaf3-3e616828a559",
+    "preciousness": false,
+    "origin": "Gambia",
+    "visual": {
+      "color": "RoyalBlue",
+      "opacity": 0,
+      "edges": 17
+    },
+    "value": 153
+  },
+  {
+    "name": "a228562a-242f-45e9-93d8-b00c1d7220b0",
+    "preciousness": false,
+    "origin": "Equatorial Guinea",
+    "visual": {
+      "color": "Lavender",
+      "opacity": 0,
+      "edges": 9
+    },
+    "value": 739
+  },
+  {
+    "name": "547e9a98-4694-4bb6-a6ef-1e04cf5edbd0",
+    "preciousness": false,
+    "origin": "Iran (Islamic Republic of)",
+    "visual": {
+      "color": "HotPink",
+      "opacity": 0,
+      "edges": 34
+    },
+    "value": 250
+  },
+  {
+    "name": "783bd306-c643-40a4-a33a-9bfa71891348",
+    "preciousness": true,
+    "origin": "Singapore",
+    "visual": {
+      "color": "Azure",
+      "opacity": 0,
+      "edges": 7
+    },
+    "value": 573
+  },
+  {
+    "name": "5843d55a-c090-4cb4-bf3d-95e268ddc791",
+    "preciousness": true,
+    "origin": "France",
+    "visual": {
+      "color": "MediumOrchid",
+      "opacity": 0,
+      "edges": 29
+    },
+    "value": 836
+  },
+  {
+    "name": "591e5b1b-58bb-442e-bbdd-e5e78bf00038",
+    "preciousness": false,
+    "origin": "French Polynesia",
+    "visual": {
+      "color": "BlanchedAlmond",
+      "opacity": 0,
+      "edges": 9
+    },
+    "value": 987
+  },
+  {
+    "name": "289b16ca-e958-4fab-a280-85c2f13e431f",
+    "preciousness": true,
+    "origin": "Albania",
+    "visual": {
+      "color": "IndianRed ",
+      "opacity": 0,
+      "edges": 28
+    },
+    "value": 573
+  },
+  {
+    "name": "0275179e-8c1e-47f2-9b5c-60af6de425f7",
+    "preciousness": true,
+    "origin": "France",
+    "visual": {
+      "color": "AliceBlue",
+      "opacity": 0,
+      "edges": 20
+    },
+    "value": 208
+  },
+  {
+    "name": "27b95091-cffd-4aeb-ae8e-0aeeacbbf5ed",
+    "preciousness": false,
+    "origin": "Uzbekistan",
+    "visual": {
+      "color": "Cyan",
+      "opacity": 0,
+      "edges": 43
+    },
+    "value": 912
+  },
+  {
+    "name": "4b1ce50d-6ab0-45ce-a87e-187f4816ef4d",
+    "preciousness": false,
+    "origin": "Cuba",
+    "visual": {
+      "color": "PapayaWhip",
+      "opacity": 0,
+      "edges": 45
+    },
+    "value": 40
+  },
+  {
+    "name": "c0df8375-5836-4be5-aff4-cdc59e097988",
+    "preciousness": false,
+    "origin": "Russian Federation",
+    "visual": {
+      "color": "LightSeaGreen",
+      "opacity": 0,
+      "edges": 43
+    },
+    "value": 940
+  },
+  {
+    "name": "d1dabd3b-631c-4d48-bd9a-6f1e4086e682",
+    "preciousness": false,
+    "origin": "San Marino",
+    "visual": {
+      "color": "LightSkyBlue",
+      "opacity": 0,
+      "edges": 26
+    },
+    "value": 400
+  },
+  {
+    "name": "e32365d5-7a26-425c-a38b-7419bbbf71be",
+    "preciousness": false,
+    "origin": "Brunei Darussalam",
+    "visual": {
+      "color": "LemonChiffon",
+      "opacity": 0,
+      "edges": 33
+    },
+    "value": 201
+  },
+  {
+    "name": "76db8d20-d5b2-4e17-960c-96233364029f",
+    "preciousness": false,
+    "origin": "Malawi",
+    "visual": {
+      "color": "AntiqueWhite",
+      "opacity": 0,
+      "edges": 5
+    },
+    "value": 924
+  },
+  {
+    "name": "2f360710-8ebf-4ca8-9c6b-6fb94e8c7cd8",
+    "preciousness": false,
+    "origin": "Liberia",
+    "visual": {
+      "color": "ForestGreen",
+      "opacity": 0,
+      "edges": 41
+    },
+    "value": 596
+  },
+  {
+    "name": "a57e62c0-78bb-44cf-aa33-f8e16096bb46",
+    "preciousness": false,
+    "origin": "San Marino",
+    "visual": {
+      "color": "LightSlateGray",
+      "opacity": 0,
+      "edges": 37
+    },
+    "value": 476
+  },
+  {
+    "name": "2ceaee80-4fa5-45c5-9ca6-7edf99e86be2",
+    "preciousness": false,
+    "origin": "Kiribati",
+    "visual": {
+      "color": "Blue",
+      "opacity": 0,
+      "edges": 50
+    },
+    "value": 475
+  },
+  {
+    "name": "ff249e6a-e190-4ccf-9699-331ab402f130",
+    "preciousness": false,
+    "origin": "El Salvador",
+    "visual": {
+      "color": "DarkOrchid",
+      "opacity": 0,
+      "edges": 40
+    },
+    "value": 854
+  },
+  {
+    "name": "48d3ff17-e6c6-41b0-8492-990ec461f125",
+    "preciousness": true,
+    "origin": "Saint Lucia",
+    "visual": {
+      "color": "LightYellow",
+      "opacity": 0,
+      "edges": 9
+    },
+    "value": 596
+  },
+  {
+    "name": "73dbf006-a9f5-4318-a296-ae1972db97cb",
+    "preciousness": false,
+    "origin": "Nigeria",
+    "visual": {
+      "color": "Beige",
+      "opacity": 0,
+      "edges": 18
+    },
+    "value": 477
+  },
+  {
+    "name": "1da3bb3b-46dd-4ed0-846b-bf4c6548649c",
+    "preciousness": true,
+    "origin": "Slovenia",
+    "visual": {
+      "color": "SlateBlue",
+      "opacity": 0,
+      "edges": 27
+    },
+    "value": 813
+  },
+  {
+    "name": "f39c20f3-7f18-4970-a5f7-2f8ef3e03e97",
+    "preciousness": false,
+    "origin": "Colombia",
+    "visual": {
+      "color": "Green",
+      "opacity": 0,
+      "edges": 50
+    },
+    "value": 631
+  },
+  {
+    "name": "9744c146-f7fa-404d-9fc3-a88c27db4916",
+    "preciousness": false,
+    "origin": "Congo",
+    "visual": {
+      "color": "SteelBlue",
+      "opacity": 0,
+      "edges": 36
+    },
+    "value": 365
+  },
+  {
+    "name": "6f7c0156-f400-4c78-8093-de9760174f16",
+    "preciousness": false,
+    "origin": "Saint Helena, Ascension and Tristan da Cunha",
+    "visual": {
+      "color": "PeachPuff",
+      "opacity": 0,
+      "edges": 22
+    },
+    "value": 166
+  },
+  {
+    "name": "456453eb-1bf2-40c0-a33a-d6abc1bbbb1b",
+    "preciousness": true,
+    "origin": "Costa Rica",
+    "visual": {
+      "color": "Blue",
+      "opacity": 0,
+      "edges": 29
+    },
+    "value": 841
+  }
+]

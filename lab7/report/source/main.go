@@ -1,20 +1,26 @@
 package main
 
+// Автостоянка. Доступно несколько машиномест. На одном месте
+// может находиться только один автомобиль. Если все места заняты, то
+// автомобиль не станет ждать больше определенного времени и уедет на другую
+// стоянку.
+
+// Пусть время между появлением нового автомобиля на стоянке определяется по показательному закону распределения СВ
+
 import (
-	"fmt"
-	"lab6/pkg/bacteria"
+	"lab7/pkg/parking"
+	"lab7/pkg/settings"
 )
 
-// Паттерн Flyweight. Разработать систему учета процессов размножения колонии бактерий.
-
 func main() {
-	bt := bacteria.NewBacteriaType(10)
+	p := make(chan int)
+	stop := make(chan struct{})
+	cars := parking.CreateTraffic(settings.AutoLambda, stop)
+	go parking.InitPlaces(p, stop, 3)
 	for {
-		if bt.CountBacterias() < 1000 {
-			bt.Tick()
-		} else {
-			fmt.Println("Stop program")
-			break
+		select {
+		case car := <-cars:
+			go car.Process(p, stop)
 		}
 	}
 }
