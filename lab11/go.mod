@@ -1,4 +1,4 @@
-module lab11/backend
+module lab11
 
 go 1.17
 

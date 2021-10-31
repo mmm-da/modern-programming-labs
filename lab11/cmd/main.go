@@ -1,6 +1,10 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"lab11/routes"
+
+	"github.com/gin-gonic/gin"
+)
 
 // f) выбор текстового файла с заметками из архива файлов по разделам и его отображение
 // Текстовый файл будет представлен в в виде json с следующей структурой
@@ -13,6 +17,6 @@ import "github.com/gin-gonic/gin"
 
 func main() {
 	r := gin.Default()
-	routes.prepareRoutes(r)
+	routes.PrepareRoutes(r)
 	r.Run()
 }
