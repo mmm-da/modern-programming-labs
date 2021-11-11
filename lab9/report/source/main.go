@@ -1,20 +1,37 @@
 package main
 
+// Телнет. Создать программу, которая соединяется с указанным
+// сервером по указанному порту и производит обмен текстовой информацией.
+
 import (
-	"fmt"
-	"lab6/pkg/bacteria"
+	"io"
+	"net"
+	"os"
 )
 
-// Паттерн Flyweight. Разработать систему учета процессов размножения колонии бактерий.
+func connectStreams(dst io.Writer, src io.Reader, stop chan struct{}) {
+	go func() {
+		for {
+			select {
+			case <-stop:
+				break
+			default:
+				io.Copy(dst, src)
+			}
+		}
+	}()
+}
 
 func main() {
-	bt := bacteria.NewBacteriaType(10)
+	conn, err := net.Dial("tcp", "127.0.0.1:2701")
+	if err != nil {
+		panic(err)
+	}
+
+	stop := make(chan struct{})
+	defer close(stop)
+	connectStreams(conn, os.Stdin, stop)
+	connectStreams(os.Stdout, conn, stop)
 	for {
-		if bt.CountBacterias() < 1000 {
-			bt.Tick()
-		} else {
-			fmt.Println("Stop program")
-			break
-		}
 	}
 }

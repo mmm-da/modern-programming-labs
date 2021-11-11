@@ -4,45 +4,22 @@ package main
 // сервером по указанному порту и производит обмен текстовой информацией.
 
 import (
+	"io"
 	"net"
 	"os"
 )
 
-func readStdin(stop chan struct{}) chan []byte {
-	bytesFromStdin := make(chan []byte)
+func connectStreams(dst io.Writer, src io.Reader, stop chan struct{}) {
 	go func() {
-		defer close(bytesFromStdin)
-		buffer := make([]byte, 10)
 		for {
 			select {
 			case <-stop:
 				break
 			default:
-				os.Stdin.Read(buffer)
-				bytesFromStdin <- buffer
+				io.Copy(dst, src)
 			}
 		}
 	}()
-	return bytesFromStdin
-}
-
-func readTelnet(telnetSocket net.Conn, stop chan struct{}) chan []byte {
-	bytesFromTelnet := make(chan []byte)
-
-	go func() {
-		defer close(bytesFromTelnet)
-		buffer := make([]byte, 10)
-		for {
-			select {
-			case <-stop:
-				break
-			default:
-				telnetSocket.Read(buffer)
-				bytesFromTelnet <- buffer
-			}
-		}
-	}()
-	return bytesFromTelnet
 }
 
 func main() {
@@ -53,15 +30,8 @@ func main() {
 
 	stop := make(chan struct{})
 	defer close(stop)
-	stdin := readStdin(stop)
-	telnet := readTelnet(conn, stop)
-
+	connectStreams(conn, os.Stdin, stop)
+	connectStreams(os.Stdout, conn, stop)
 	for {
-		select {
-		case char := <-stdin:
-			conn.Write(char)
-		case char := <-telnet:
-			os.Stdout.Write(char)
-		}
 	}
 }

@@ -1,20 +1,22 @@
 package main
 
 import (
-	"fmt"
-	"lab6/pkg/bacteria"
+	"lab11/routes"
+
+	"github.com/gin-gonic/gin"
 )
 
-// Паттерн Flyweight. Разработать систему учета процессов размножения колонии бактерий.
+// f) выбор текстового файла с заметками из архива файлов по разделам и его отображение
+// Текстовый файл будет представлен в в виде json с следующей структурой
+// id       		  - id заметки
+// user				  - автор заметки
+// create_datetime 	  - время создания
+// last_edit_datetime - время последнего редактирования
+// text				  - текст заметки в формате Markdown
+// tags				  - список тегов
 
 func main() {
-	bt := bacteria.NewBacteriaType(10)
-	for {
-		if bt.CountBacterias() < 1000 {
-			bt.Tick()
-		} else {
-			fmt.Println("Stop program")
-			break
-		}
-	}
+	r := gin.Default()
+	routes.PrepareRoutes(r)
+	r.Run()
 }
